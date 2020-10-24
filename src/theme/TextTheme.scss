@@ -1,0 +1,55 @@
+body {
+  background-color: rgb(0, 21, 44);
+}
+
+.top-headline {
+  color: white;
+  opacity: 70%;
+  font-family: 'Open Sans', monospace;
+  font-weight: bolder;
+  font-size: 60px;
+}
+
+.tech-desc-line {
+  color: aqua;
+  opacity: 100%;
+  font-family: 'Fira Code', monospace;
+}
+
+.sub-top-headline {
+  color: white;
+  opacity: 50%;
+  font-size: 60px;
+}
+
+.desc-text {
+  font-family: 'Fira Code', monospace;
+  color: gray;
+  line-height: 30px;
+  opacity: 60%;
+}
+
+.logo {
+  // float: left;
+  padding-top: 3em;
+  padding-left: 9.5em;
+}
+
+.header-option {
+  float: right;
+  padding-left: 2em;
+  padding-right: 2em;
+  color: rgb(180, 180, 180);
+  font-family: 'Fira Code', monospace;
+}
+
+.button-option {
+  // float: right;
+  // padding-left: 2em;
+  // padding-right: 2em;
+  color: aqua;
+  padding-top: 3em;
+  // text-decoration: initial;
+  float: left;
+  font-family: 'Fira Code', monospace;
+}

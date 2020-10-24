@@ -1,1 +1,51 @@
-/* No CSS *//*# sourceMappingURL=TextTheme.css.map */
+body {
+  background-color: #00152c;
+}
+
+.top-headline {
+  color: white;
+  opacity: 70%;
+  font-family: 'Open Sans', monospace;
+  font-weight: bolder;
+  font-size: 60px;
+}
+
+.tech-desc-line {
+  color: aqua;
+  opacity: 100%;
+  font-family: 'Fira Code', monospace;
+}
+
+.sub-top-headline {
+  color: white;
+  opacity: 50%;
+  font-size: 60px;
+}
+
+.desc-text {
+  font-family: 'Fira Code', monospace;
+  color: gray;
+  line-height: 30px;
+  opacity: 60%;
+}
+
+.logo {
+  padding-top: 3em;
+  padding-left: 9.5em;
+}
+
+.header-option {
+  float: right;
+  padding-left: 2em;
+  padding-right: 2em;
+  color: #b4b4b4;
+  font-family: 'Fira Code', monospace;
+}
+
+.button-option {
+  color: aqua;
+  padding-top: 3em;
+  float: left;
+  font-family: 'Fira Code', monospace;
+}
+/*# sourceMappingURL=TextTheme.css.map */
