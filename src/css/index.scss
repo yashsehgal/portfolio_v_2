@@ -4,8 +4,8 @@
 // }
 
 #intro-section {
-  padding-top: 9em;
-  // float: left;
+  padding-top: 7em;
+  float: left;
   padding-left: 10em;
   display: block;
   line-height: 30px;
@@ -23,4 +23,68 @@
 #resume {
   float: right;
   padding-top: 1em;
+}
+
+#about-me-section {
+  // float: center;
+  padding-top: 50em;
+  padding-left: 10em;
+}
+
+.skill-list {
+  list-style-image: url('/src/images/Polygon\ 1.svg');
+  line-height: 20px;
+}
+
+#skill-list-01 {
+  // float: left;
+  // position: absolute;
+}
+
+#skill-list-02 {
+  // float: right;
+  float: left;
+  // height: 10px;
+  // padding-top: 2px;
+  // line-height: 200px;
+}
+
+#skills {
+  columns: 100px 1;
+  // grid-row: span;
+}
+
+#experience-section {
+  padding-top: 9em;
+  padding-left: 10em;
+}
+
+#education-section {
+  padding-top: 9em;
+  padding-left: 10em;
+}
+
+
+/// schools list options
+.subjects-list {
+  list-style-image: url('/src/images/Polygon\ 1.svg');
+  line-height: 20px;
+}
+
+#subjects-list-01 {
+  // float: left;
+  // position: absolute;
+}
+
+#subjects-list-02 {
+  // float: right;
+  float: left;
+  // height: 10px;
+  // padding-top: 2px;
+  // line-height: 200px;
+}
+
+#subjects {
+  columns: 100px 1;
+  // grid-row: span;
 }

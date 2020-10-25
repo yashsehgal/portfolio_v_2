@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style action="media">
     ::selection {
-      background-color: rgb(0, 163, 22);
+      background-color: aqua;
+      /* stroke-opacity: 30%; */
       color: black;
     }
   </style>
@@ -25,25 +26,196 @@
 
     <a href="#" id="resume" class="button-main header-option">Resume</a>
 
-    <p id="about-me" class="header-option">About Me</p>
-    <p id="work" class="header-option">Work</p>
-    <p id="experience" class="header-option">Experience</p>
-    <p id="contact" class="header-option">Contact</p>
+    <a href="#about-me-container"><p id="about-me" class="header-option">About Me</p></a>
+    <a href="#"><p id="work" class="header-option">Work</p></a>
+    <a href="#experience-section"><p id="experience" class="header-option">Experience</p></a>
+    <a href="#"><p id="contact" class="header-option">Contact</p></a>
 
   </header>
 
-  <div id="intro-section">
-    <p id="intro-line" class="tech-desc-line">Hey there, My name is</p>
-    <p id="name" class="top-headline">Yash Sehgal.</p>
-    <p id="intro-desc" class="top-headline sub-top-headline">A Software Developer & Designer.</p>
-    <!--descriptive text-->
-    <div id="desc" class="desc-text">
-      I am a Computer Science Student living in Indore, Madhya Pradesh. <br>
-      Specializing in Computer Science with Artificial Intelligence. <br>
-      I have worked on various web application and designed websites and apps.
+  <!--webpage root container-->
+  <div id="root">
+
+    <!--introduction section container-->
+    <div id="intro-section">
+      <p id="intro-line" class="tech-desc-line">> Hey there, My name is</p>
+      <p id="name" class="top-headline">Yash Sehgal.</p>
+      <p id="intro-desc" class="top-headline sub-top-headline">A Software Developer & Designer.</p>
+      <!--descriptive text-->
+      <div id="desc" class="desc-text">
+        I am a Computer Science Student living in Indore, Madhya Pradesh. <br>
+        Specializing in Computer Science with Artificial Intelligence. <br>
+        I have worked on various websites and softwares, Also, Have designed many UIs.
+      </div>
+
+      <a href="mailto:yashsehgal.work@gmail.com" id="get-in-touch_button" class="button-main button-option">Get in touch</a>
     </div>
 
-    <a href="#" id="get-in-touch_button" class="button-main button-option">Get in touch</a>
+    <!--about me section container-->
+    <div id="about-me-section">
+      <div id="about-me-container">
+        <div id="headline-section">
+          <span class="inline"><p id="headline" class="tech-desc-line">01. <p id="title-name" class="heading">About Me</p></p></span>
+        </div>    <!--closing of headline-section-->
+        <div id="about-me-content">
+          <p id="content-text-01" class="content">
+            Hello! I am Yash Sehgal. A Computer Science Student based in Indore, MP, India
+          </p>
+          
+          <p id="content-text-02" class="content">
+            I love to create frontend websites and applications, or anything in between. My <br>
+            goal is to always build products that provide pixel-perfect, best performance <br>
+            experiences. With this, I also love scripting backend services using Javascript <br>
+            and Python. Currently, I am learning Full Stack Development by myself <br>
+            and specializing in Artificial Intelligence formerly.
+          </p>
+
+          <p id="content-text-03" class="content">
+            Currently, I am pursuing my Bachelors Degree in Computer Science (with AI) <br>
+            from <a href="http://medicaps.ac.in" class="tech-desc-line button-non-underline">Medicaps University</a>, Indore.
+            I have worked with various projects, <br>
+            and love to contribute to the best of my ability.
+          </p>
+        </div>    <!--closing of about-me-content-->
+
+        <!--skills container-->
+        <div id="skills">
+          <div id="skill-list-01">
+            <div id="skill-content">
+              <ul class="skill-list">
+                <li class="bullet_points">C++</li>
+                <li class="bullet_points">Python</li>
+                <li class="bullet_points">UI Designing</li>
+              </ul>
+            </div>
+          </div>
+          <div id="skill-list-02">
+            <div id="skill-content">
+              <ul class="skill-list">
+                <li class="bullet_points">Javascript</li>
+                <li class="bullet_points">HTML/CSS + SCSS</li>
+                <li class="bullet_points">MongoDB</li>
+              </ul>
+            </div>
+          </div>
+        </div>    <!--closing of skills-->
+      </div>   <!--closing of about-me-container-->
+    </div>  <!--closing of about-me-section-->
+
+    <!--experience container-->
+    <div id="experience-section">
+      <!--exp container-->
+      <div id="exp-container">
+        <div id="headline-section">
+          <span class="inline"><p id="headline" class="tech-desc-line">02. <p id="title-name" class="heading">Experience</p></p></span>
+        </div>    <!--closing of headline-section-->
+
+        <!--exp-content section-->
+        <div id="exp-content">
+          <div id="exp-content-01">
+            <div id="exp-content-01-headline">
+              <p id="headline" class="sub-heading">
+                01. User Interface Designer 
+                <a href="http://www.heytechitservices.com/" id="company-name" class="tech-desc-line button-non-underline">
+                  @ HeyTech IT Services
+                </a>
+              </p>
+            </div>    <!--exp-content-01-headline closing-->
+            <div id="exp-content-01-desc-section">
+              <p id="exp-content-01-desc" class="content">
+                During this job, I have designed user interfaces for applications and webpages. My role was <br>
+                to design an optimal user experience throughout the application. I have used various designing <br>
+                technologies like Adobe XD, InVision, Figma for Logo Designing etc.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>    <!--closing of exp-container-->
+    </div>    <!--closing of experience container-->
+
+    <!--education section-->
+    <div id="education-section">
+      <div id="education-container">
+         <div id="headline-section">
+          <span class="inline"><p id="headline" class="tech-desc-line">03. <p id="title-name" class="heading">Education</p></p></span>
+        </div>    <!--closing of headline-section-->
+
+        <!--education content section-->
+        <div id="education-content-section">
+          
+          <!--education 01 section-->
+          <div id="education-01-section">
+            <div id="education-01-headline">
+              <p id="headline" class="sub-heading">
+                Bachelors in Computer Science & Engineering (with AI)
+                <a href="http://www.medicaps.ac.in/" id="school-name" class="tech-desc-line button-non-underline">
+                  @ Medicaps University, Indore
+                </a>
+              </p>
+            </div>  <!--closing of education-01-headline-->
+
+            <div id="education-01-desc-content">
+              <p id="education-01-desc" class="content">
+                During my Graduation, I have participated in various events and clubs. Such as:
+              </p>
+              
+              <!--skills container-------------------------------------------------------TO BE ACTIVATED LATER-->
+              <!--------------------------------DO NOT TOUCH THIS SNIPPET OF CODE------------------->
+        <!-- <div id="subjects">
+          <div id="subjects-list-01">
+            <div id="subjects-content">
+              <ul class="subjects-list">
+                <li class="bullet_points">Mathematics</li>
+                <li class="bullet_points">Physics</li>
+                <li class="bullet_points">Chemistry</li>
+                <li class="bullet_points">Computer Science with C++</li>
+                <li class="bullet_points">English</li>
+              </ul>
+            </div>
+          </div>
+        </div>    ---------closing of skills------------------------- -->
+        <!--------------------------------DO NOT TOUCH THIS SNIPPET OF CODE------------------->
+
+
+          <!--education 01 section-->
+          <div id="education-01-section">
+            <div id="education-01-headline">
+              <p id="headline" class="sub-heading">
+                High School Diploma
+                <a href="http://www.ghpsindore.org/" id="school-name" class="tech-desc-line button-non-underline">
+                  @ Guru Harkrishan Public School, Indore
+                </a>
+              </p>
+            </div>  <!--closing of education-01-headline-->
+
+            <div id="education-01-desc-content">
+              <p id="education-01-desc" class="content">
+                During my High School Diploma, I have studied various subjects such as:
+              </p>
+              
+              <!--skills container-->
+        <div id="subjects">
+          <div id="subjects-list-01">
+            <div id="subjects-content">
+              <ul class="subjects-list">
+                <li class="bullet_points">Mathematics</li>
+                <li class="bullet_points">Physics</li>
+                <li class="bullet_points">Chemistry</li>
+                <li class="bullet_points">Computer Science with C++</li>
+                <li class="bullet_points">English</li>
+              </ul>
+            </div>
+          </div>
+        </div>    <!--closing of subjects-->
+            </div>
+          </div>
+        </div>
+
+      </div>    <!--closing of education-container-->
+    </div>  <!--closing of education-section-->
+
+    <!--closing of root container-->
   </div>
   
   <footer class="footer">

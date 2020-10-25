@@ -1,1 +1,12 @@
-/* No CSS *//*# sourceMappingURL=HeaderTheme.css.map */
+* {
+  margin: 0 auto;
+}
+
+.header {
+  margin: 0;
+  background-color: #00152c;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+/*# sourceMappingURL=HeaderTheme.css.map */

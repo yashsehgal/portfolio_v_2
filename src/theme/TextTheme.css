@@ -24,7 +24,7 @@ body {
 
 .desc-text {
   font-family: 'Fira Code', monospace;
-  color: gray;
+  color: #b9b9b9;
   line-height: 30px;
   opacity: 60%;
 }
@@ -47,5 +47,35 @@ body {
   padding-top: 3em;
   float: left;
   font-family: 'Fira Code', monospace;
+}
+
+.heading {
+  font-family: 'Open Sans', monospace;
+  font-size: 30px;
+  font-weight: bolder;
+  color: white;
+  opacity: 65%;
+}
+
+.content {
+  color: white;
+  opacity: 50%;
+  text-align: justify;
+  font-family: 'Open Sans', monospace;
+  line-height: 30px;
+}
+
+.bullet_points {
+  font-family: 'Fira Code', monospace;
+  color: white;
+  opacity: 50%;
+  padding-left: 10px;
+}
+
+.sub-heading {
+  font-family: 'Open Sans', monospace;
+  font-size: 20px;
+  color: white;
+  opacity: 70%;
 }
 /*# sourceMappingURL=TextTheme.css.map */
