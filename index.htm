@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="/src/css/index.css">
   <link rel="stylesheet" href="/src/theme/TextTheme.css">
   <link rel="stylesheet" href="/src/theme/ButtonTheme.css">
+  <link rel="stylesheet" href="/src/theme/ImageTheme.css">
+  <link rel="stylesheet" href="/src/theme/HeaderTheme.css">
 
   <title>Yash Sehgal</title>
 </head>
@@ -21,15 +23,21 @@
   <header id="header" class="header">
     <!--logo text-->
     <!-- <p id="logo" class="tech-desc-line logo">Yash Sehgal</p> -->
-    
+
+    <a href="#" id="logo" class="header-logo button-non-underline">
+      <p id="logo-text" class="tech-desc-line">
+        Yash Sehgal
+      </p>
+    </a>
+
     <!--resume button-->
 
     <a href="#" id="resume" class="button-main header-option">Resume</a>
 
     <a href="#about-me-container"><p id="about-me" class="header-option">About Me</p></a>
-    <a href="#"><p id="work" class="header-option">Work</p></a>
+    <a href="#project-work-section"><p id="work" class="header-option">Work</p></a>
     <a href="#experience-section"><p id="experience" class="header-option">Experience</p></a>
-    <a href="#"><p id="contact" class="header-option">Contact</p></a>
+    <a href="mailto:yashsehgal.work@gmail.com"><p id="contact" class="header-option">Contact</p></a>
 
   </header>
 
@@ -73,8 +81,9 @@
           <p id="content-text-03" class="content">
             Currently, I am pursuing my Bachelors Degree in Computer Science (with AI) <br>
             from <a href="http://medicaps.ac.in" class="tech-desc-line button-non-underline">Medicaps University</a>, Indore.
-            I have worked with various projects, <br>
-            and love to contribute to the best of my ability.
+            I have worked on various projects, <br>
+            both personal and open source.
+
           </p>
         </div>    <!--closing of about-me-content-->
 
@@ -215,11 +224,53 @@
       </div>    <!--closing of education-container-->
     </div>  <!--closing of education-section-->
 
+    <!---------------------DO NOT TOUCH THIS CODE--------------------------------------------------->
+    <!--project work container-->
+    <!-- <div id="project-work-container">
+      <div id="project-work-section">
+        <div id="headline-section">
+          <span class="inline"><p id="headline" class="tech-desc-line">04. <p id="title-name" class="heading">Some work done by me.</p></p></span>
+        </div>    --- closing of headline-section----
+      </div>
+    </div> -->
+
+    <!------------------------------------DO NOT TOUCH THE ABOVE SNIPPET OF CODE-------------------->
+
+    <!--get in touch container-->
+    <div id="get-in-touch-container">
+      <div id="get-in-touch-section">
+        <div id="headline-bottom">
+          <span class="inline"><p id="headline" class="tech-desc-line">04. Let's meet<p id="bottom-title" class="bottom-heading">Get in touch</p></p></span>
+        </div>
+        <div id="desc-content">
+          <p id="bottom-content" class="content">
+          Although I'm not currently looking for any new opportunities,<br>
+          my inbox is always open. Whether you have a question or just want to<br>
+          say hi, I'll try my best to get back to you!
+          </p>
+          <a href="mailto:yashsehgal.work@gmail.com" id="get-in-touch_button_bottom" class="button-main button-option">Get in touch</a>
+        </div>
+      </div>
+    </div>
+
+
     <!--closing of root container-->
   </div>
   
   <footer class="footer">
-    <!--footer code-->
-  </footer>
+    <div id="footer-section">
+      <!-- <div id="social-media-link-section">
+        <a href="https://github.com/bchiang7" aria-label="GitHub">
+          <img src="/src/images/svgs/github.svg" alt="" class="footer-logo">
+        </a>
+      </div>
+    </div> -->
+
+    <div id="footer-note">
+      <p id="footer-note-content">
+        Designed and Developed by, <a href="#" class="tech-desc-line">Yash Sehgal</a>
+      </p>
+    </div>
+  </footer>   <!--closing of footer-->
 </body>
 </html>

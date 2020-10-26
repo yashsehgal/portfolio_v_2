@@ -1,12 +1,9 @@
-* {
-  margin: 0 auto;
+.header {
+  background-color: #00152c;
 }
 
-.header {
-  margin: 0;
-  background-color: #00152c;
-  position: fixed;
-  top: 0;
-  width: 100%;
+.header-logo {
+  padding-left: 10em;
+  float: left;
 }
 /*# sourceMappingURL=HeaderTheme.css.map */

@@ -62,4 +62,35 @@
   -webkit-columns: 100px 1;
           columns: 100px 1;
 }
+
+#project-work-container {
+  padding-top: 9em;
+}
+
+#get-in-touch-container {
+  padding-top: 10em;
+  padding-left: 0em;
+  margin: 0;
+  padding-bottom: 5em;
+}
+
+#bottom-title {
+  font-size: 50px;
+}
+
+#get-in-touch_button_bottom {
+  text-align: center;
+  display: contents;
+}
+
+#footer-note {
+  text-align: center;
+}
+
+#footer-note-content {
+  color: white;
+  opacity: 80%;
+  font-family: 'Fira Code', monospace;
+  font-weight: lighter;
+}
 /*# sourceMappingURL=index.css.map */
