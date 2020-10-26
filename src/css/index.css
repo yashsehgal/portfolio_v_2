@@ -93,4 +93,11 @@
   font-family: 'Fira Code', monospace;
   font-weight: lighter;
 }
+
+#logo {
+  float: left;
+  padding-left: 1em;
+  width: 50px;
+  margin-left: 3.5em;
+}
 /*# sourceMappingURL=index.css.map */
