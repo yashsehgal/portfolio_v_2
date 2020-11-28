@@ -23,7 +23,7 @@ class Test {
     const types = ["log", "info", "warn", "error"];
     
     for(var count = 0; count < types.length; count++) {
-      this.testLoggerMethod(message, types);
+      this.testLoggerMethod(message, types[count]);
     }
   }
 };
@@ -33,5 +33,4 @@ const runTests = function runTests() {
   
   /// this statement will be showing the message on the console with all the logging methods (like: log, info, warn, error)
   tester.checkLoggerMethod("The username is not available");
-
 }
