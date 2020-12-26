@@ -28,6 +28,7 @@ body {
   color: rgb(185, 185, 185);
   line-height: 30px;
   opacity: 60%;
+  width: 60%;
 }
 
 .logo {
@@ -44,6 +45,10 @@ body {
   font-family: 'Fira Code', monospace;
 }
 
+.header-option:hover {
+  color: white;
+}
+
 .button-option {
   // float: right;
   // padding-left: 2em;
@@ -53,6 +58,10 @@ body {
   // text-decoration: initial;
   float: left;
   font-family: 'Fira Code', monospace;
+}
+
+.button-option:hover {
+  color: white;
 }
 
 .heading {
@@ -70,6 +79,7 @@ body {
   font-family: 'Open Sans', monospace;
   // font-weight: lighter;
   line-height: 30px;
+  width: 46%;
 }
 
 .bullet_points {
