@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAEA,AAAA,OAAO,CAAC;EAEN,gBAAgB,EAAE,OAAc;CAIjC;;AAED,AAAA,YAAY,CAAC;EACX,YAAY,EAAE,IAAI;EAClB,KAAK,EAAE,IAAI;CACZ",
-    "sources": [
-        "HeaderTheme.scss"
-    ],
-    "names": [],
-    "file": "HeaderTheme.css"
-}

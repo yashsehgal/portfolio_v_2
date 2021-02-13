@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="84.853" height="84.853" viewBox="0 0 84.853 84.853">
-  <g id="Group_1" data-name="Group 1" transform="translate(-597.574 -188.574)">
-    <g id="Rectangle_1" data-name="Rectangle 1" transform="translate(640 188.574) rotate(45)" fill="#001932" stroke="#00e1e1" stroke-linecap="round" stroke-width="4">
-      <rect width="60" height="60" rx="12" stroke="none"/>
-      <rect x="2" y="2" width="56" height="56" rx="10" fill="none"/>
-    </g>
-    <text id="Y" transform="translate(632 242)" fill="aqua" font-size="28" font-family="OpenSans-Regular, Open Sans"><tspan x="0" y="0">Y</tspan></text>
-  </g>
-</svg>

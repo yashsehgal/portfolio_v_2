@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,YAAY,CAAC;EACX,KAAK,EAAE,IAAI;EAGX,eAAe,EAAE,IAAI;CACtB;;AAED,AAAA,YAAY,CAAC;EACX,eAAe,EAAE,IAAI;CACtB",
-    "sources": [
-        "ImageTheme.scss"
-    ],
-    "names": [],
-    "file": "ImageTheme.css"
-}
