@@ -1,0 +1,38 @@
+.massive_headline {
+  font-family: var(--general-font-family);
+  font-size: 100px;
+  font-weight: 900;
+}
+
+.navbar_option {
+  font-family: var(--general-font-family);
+  text-decoration: none;
+  color: gray;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.active_navbar_button {
+  color: black;
+}
+
+.navbar_option:hover {
+  color: black;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.paragraph {
+  color: rgb(97, 97, 97);
+  font-family: var(--general-font-family);
+  font-size: 14px;
+}
+
+.content_heading {
+  font-family: var(--general-font-family);
+  color: black;
+  font-weight: 900;
+  font-size: 24px;
+}

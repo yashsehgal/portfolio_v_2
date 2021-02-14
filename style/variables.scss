@@ -1,0 +1,14 @@
+/// importing fonts globally
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');     /// Poppins font from Google Fonts
+
+:root {
+  --general-font-family: 'Poppins', monospace;
+  --primary-light-color: white;
+  --primary-dark-color: black;
+
+  --right-margin: 6em;
+  --left-margin: 6em;
+
+  --top-margin: 3em;
+  --bottom-margin: 3em;
+}
