@@ -1,0 +1,47 @@
+
+
+.header_option {
+  color: white;
+}
+
+.header_option:hover {
+  background-color: white;
+  color: black;
+}
+
+.headline {
+  color: white;
+}
+
+.headline:hover {
+  color: black;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+.pluto_font {
+  font-family: 'Hack Regular';
+  color: rgb(0, 220, 100);
+}
+
+.link {
+  color: gray;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: black;
+  background-color: white;
+}
+
+::-webkit-scrollbar {
+  background-color: white;
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: white;
+}

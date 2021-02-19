@@ -1,18 +1,13 @@
 :root {
   --general-font-family: 'Poppins', monospace;
-  
   --primary-light-color: white;
   --secondary-light-color: #c8c8c8;
-  
   --primary-dark-color: black;
-  
   --theme-purple: rgb(130, 0, 160);
   --theme-blue: rgb(0, 0, 172);
   --theme-teal: teal;
-
   --section-margin-top: 6em;
   --content-margin-top: 2em;
-
   --max-width: 800px;
-
 }
+/*# sourceMappingURL=variables.css.map */
