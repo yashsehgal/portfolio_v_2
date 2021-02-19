@@ -21,7 +21,7 @@ headerContainer.className = "header";
 headerContainer.id = "header-section";
 
 let header_options = ["Home", "Experience", "Projects", "Education", "Skills", "Resume"];
-let header_option_links = ["index.htm", "experience.htm", "projects.htm", "education.htm", "skills.htm", "/YashSehgal.pdf"];
+let header_option_links = ["index.htm", "experience.htm", "projects.htm", "education.htm", "skills.htm", "YashSehgal.pdf"];
 
 for (headerOptions in header_options) {
   if (header_options[headerOptions].toLowerCase() != "resume") {
