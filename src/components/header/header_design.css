@@ -1,0 +1,11 @@
+.header_option {
+  color: gray;
+  text-decoration: none;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.header_option:hover {
+  color: black;
+}
+/*# sourceMappingURL=header_design.css.map */
