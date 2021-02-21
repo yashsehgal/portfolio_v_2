@@ -4,6 +4,15 @@ document.body.style.maxWidth = "1400px";
 document.body.style.margin = "auto";
 document.body.style.backgroundColor = "black";
 
+/// my profile image
+let profile = document.createElement("img");
+profile.className = "animate__animated animate__fadeInUp profile";
+profile.src = "/style/assets/profile/profile.png";
+profile.alt = "This is Yash Sehgal";
+// profile.style.float = "right";
+// profile.style.width = "20%";
+// profile.style.boxShadow = "6px 6px white";
+
 let name_headline = document.createElement("p");
 name_headline.className = "headline";
 name_headline.style.fontFamily = "Poppins";
@@ -74,8 +83,10 @@ introduction_content.innerHTML = `
 introduction_content.style.fontFamily = "Poppins";
 introduction_content.style.color = "white";
 introduction_content.style.fontSize = "24px";
+introduction_content.style.float = "left";
 
 introduction_section.append(introduction_content);
+introduction_section.append(profile);
 introduction_section.style.marginTop = "6em";
 
 /// appending <introduction_section> in the document root section

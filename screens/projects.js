@@ -55,3 +55,20 @@ for (headerOptions in header_options) {
 
 /// appending <headerContainer> in the document root section
 document.getElementById("root").appendChild(headerContainer);
+
+/// projects listing components
+
+let projects_section = document.createElement("div");
+projects_section.className = "projects_section";
+
+fetch('/projects_list.json')
+  .then((res) => res.json())
+  .then((res) => {
+    for (let data in res) {
+      // console.log(res[data]);          TESTING JSON FETCHING METHOD        ---working
+
+      let project_name = document.createElement("p");
+      project_name.className = "project_name";
+      
+    }
+  });

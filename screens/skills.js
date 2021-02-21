@@ -55,3 +55,34 @@ for (headerOptions in header_options) {
 
 /// appending <headerContainer> in the document root section
 document.getElementById("root").appendChild(headerContainer);
+
+let skills_section = document.createElement("div");
+skills_section.className = "content animate__animated animate__fadeInUp";
+skills_section.id = "skills-section";
+skills_section.style.marginTop = "3em";
+
+fetch('/skills_list.json')
+  .then((res) => res.json())
+  .then((res) => {
+    for (let data in res) {
+      // console.log(res[data]);
+      let skill_name = document.createElement("h3");
+      skill_name.className = "skill_name";
+      skill_name.style.color = "white";
+      skill_name.style.fontFamily = "Poppins";
+      skill_name.style.fontWeight = "600";
+      // skill_name.style.fontSize = "24px";
+      skill_name.innerHTML = res[data].skill_name;
+
+      let skill_level = document.createElement("p");
+      skill_level.id = "skill_level";
+      skill_level.style.color = "gray";
+      skill_level.style.fontFamily = "Poppins";
+      skill_level.innerHTML = res[data].level;
+
+      skills_section.append(skill_name);
+      skills_section.append(skill_level);
+    }
+  });
+
+  document.getElementById("root").appendChild(skills_section);

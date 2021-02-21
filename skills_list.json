@@ -1,0 +1,22 @@
+[
+  {
+    "skill_name": "Python",
+    "level": "Intermediate"
+  },
+  {
+    "skill_name": "Javascript",
+    "level": "Intermediate"
+  },
+  {
+    "skill_name": "C++",
+    "level": "Intermediate"
+  },
+  {
+    "skill_name": "UI/UX Designing",
+    "level": "Professional"
+  },
+  {
+    "skill_name": "Web Designing",
+    "level": "Intermediate"
+  }
+]

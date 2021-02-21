@@ -72,7 +72,7 @@ experience_section.style.marginTop = "4em";
 
 /// FETCHING DATA-VALUES FROM JSON FILE
 
-fetch('experiences_list.json')
+fetch('/experiences_list.json')
   .then((res) => res.json())
   .then((res) => {
     for (let data in res) {
@@ -136,7 +136,7 @@ fetch('experiences_list.json')
       experience_section.append(experience_heading);
       experience_section.append(experience_desc);
       experience_section.append(experience_desc_content);
-      experience_section.append("<br>");
+      // experience_section.append("<br>");
 
     }
   });

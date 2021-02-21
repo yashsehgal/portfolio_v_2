@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 .header_option {
   color: white;
@@ -44,4 +44,11 @@
 
 ::-webkit-scrollbar-thumb {
   background-color: white;
+}
+
+.profile {
+  width: 20%;
+  float: right;
+  margin-right: 8em;
+  box-shadow: 6px 6px white;
 }
