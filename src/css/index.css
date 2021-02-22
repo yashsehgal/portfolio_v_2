@@ -39,4 +39,15 @@
 ::-webkit-scrollbar-thumb {
   background-color: black;
 }
+
+.skill_name {
+  color: white;
+  background-color: black;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.skill_name:hover {
+  color: teal;
+}
 /*# sourceMappingURL=index.css.map */

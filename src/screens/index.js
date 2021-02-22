@@ -15,8 +15,72 @@
 //   }
 // }
 
+// let json_object = require('path');
+
+/// pluto responses object
+let res = [
+  {
+    "response": "pluto('Yash Sehgal').about();",
+    "title": "About Me",
+    "tag": "about"
+  },
+  {
+    "response": "pluto('Yash Sehgal').skills()",
+    "title": "Skills I have",
+    "tag": "skills"
+  },
+  {
+    "response": "pluto('Yash Sehgal').education()",
+    "title": "My Education",
+    "tag": "education"
+  },
+  {
+    "response": "pluto('Yash Sehgal').experience()",
+    "title": "My Experiences",
+    "tag": "experience"
+  }
+];
+
+
+let _skills_res = [
+  {
+    "title": "Python"
+  },
+  {
+    "title": "C"
+  },
+  {
+    "title": "C++"
+  },
+  {
+    "title": "JavaScript"
+  },
+  {
+    "title": "UI/UX Designing"
+  },
+  {
+    "title": "Frontend Web Development & Designing"
+  },
+  {
+    "title": "JSON"
+  },
+  {
+    "title": "SQL"
+  }
+]
+
+let _education_res = [
+  {
+    "title": "Medicaps University",
+    "education_type": "Under-graduation Course in B.Tech CSE(AI as specialization)"
+  }
+]
+
+
 let homepage_container = document.createElement("div");
 homepage_container.className = "homepage_container";
+
+
 
 let introduction_section = document.createElement("div");
 introduction_section.className = "introduction_section";
@@ -38,16 +102,21 @@ introduction_description.style.fontFamily = "Poppins";
 // introduction_description.style.float = "left";
 introduction_description.innerHTML = "He is a <u>Tech Savvy</u>. <u>Developer</u>. and a <u>Designer</u>";
 
-// let profile_photo = document.createElement("img");
-// profile_photo.className = "profile";
-// profile_photo.src = "/src/assets/profile.png";
-// profile_photo.style.float = "right";
+let profile_photo = document.createElement("img");
+profile_photo.className = "profile";
+profile_photo.src = "src/screens/profile.png";
+profile_photo.style.float = "right";
+profile_photo.style.width = "24%";
+profile_photo.style.marginTop = "8em"
+profile_photo.style.boxShadow = "6px 6px black";
+profile_photo.style.outline = "solid";
+profile_photo.alt = "The profile photo path is not in the mood. You should check my social profiles to see me :)";
 
 
 /// appending introductory data into introduction_section
 introduction_section.append(introduction_headline);
 introduction_section.append(introduction_description);
-// introduction_section.append(profile_photo);
+introduction_section.append(profile_photo);
 
 
 /// appending data into homepage container
@@ -69,9 +138,9 @@ let experience_section = document.createElement("div");
 experience_section.id = "experience-section";
 experience_section.className = "section";
 
-fetch('/src/api/pluto_responses.json')
-  .then((res) => res.json())
-  .then((res) => {
+// fetch(pluto_responses_object)
+//   .then((res) => res.json())
+//   .then((res) => {
     for (let data in res) {
       
       // let response = document.createElement("p");
@@ -122,15 +191,33 @@ fetch('/src/api/pluto_responses.json')
         section_title.style.fontFamily = "Poppins";
         section_title.style.fontWeight = 600;
 
-        let description = document.createElement("p");
-        description.className = "description";
-        description.style.width = "52%";
-        description.style.fontFamily = "Poppins";
-        description.style.color = "black";
+        // let description = document.createElement("p");
+        // description.className = "description";
+        // description.style.width = "52%";
+        // description.style.fontFamily = "Poppins";
+        // description.style.color = "black";
+
+        let skills_list = document.createElement("span");
+        skills_list.className = "inline_list";
+
+        for (let skills in _skills_res) {
+          let skill_writer = document.createElement("span");
+          skill_writer.style.fontFamily = "Poppins";
+          skill_writer.className = "skill_name";
+
+          // skill_writer.innerHTML = `${_skills_res[0].title}`;
+          if (_skills_res[skills].title != "SQL") {
+            skill_writer.innerHTML = `${_skills_res[skills].title}, `;
+          } else {
+            skill_writer.innerHTML = `${_skills_res[skills].title}`;
+          }
+          skills_list.append(skill_writer);
+        }
 
         skills_section.append(pluto_response);
         skills_section.append(section_title);
-        skills_section.append(description);
+        skills_section.append(skills_list);
+        // skills_section.append(description);
 
       } else if (res[data].tag != null && res[data].tag === "education" && res[data].response != null) {
 
@@ -187,7 +274,7 @@ fetch('/src/api/pluto_responses.json')
     homepage_container.append(skills_section);
     homepage_container.append(education_section);
     homepage_container.append(experience_section);
-  });
+  // });  
 
 
 /// appending each and every section inside homepage-container into root

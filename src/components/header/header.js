@@ -4,18 +4,33 @@
 let header = document.createElement("span");
 header.className = "header";
 
-fetch('/src/api/header_options.json')
-  .then((res) => res.json())
-  .then((res) => {
-    for (let data in res) {
+let _res = [
+  {
+    "option": "Home",
+    "url": "/index.htm"
+  },
+  {
+    "option": "Contact",
+    "url": "/contact.htm"
+  },
+  {
+    "option": "v.2.0",
+    "url": "https://www.github.com/yashsehgal/portfolio_v_2"
+  }
+];
+
+// fetch('/src/screens/api/header_options.json')
+//   .then((res) => res.json())
+//   .then((res) => {
+    for (let data in _res) {
       let header_option = document.createElement("a");
       header_option.className = "header_option";
 
-      // header_option.innerHTML = res[data].option;
-      if (res[data].option.toLowerCase() != "v.2.0") {
-        header_option.innerHTML = `<a href="${res[data].url}" class="header_option">${res[data].option}</a>`;
-      } else if (res[data].option.toLowerCase() == "v.2.0") {
-        header_option.innerHTML = `<a href="${res[data].url}" class="header_option" target="_blank">${res[data].option}</a>`;
+      // header_option.innerHTML = _res[data].option;
+      if (_res[data].option.toLowerCase() != "v.2.0") {
+        header_option.innerHTML = `<a href="${_res[data].url}" class="header_option">${_res[data].option}</a>`;
+      } else if (_res[data].option.toLowerCase() == "v.2.0") {
+        header_option.innerHTML = `<a href="${_res[data].url}" class="header_option" target="_blank">${_res[data].option}</a>`;
       } else {
         console.warn("invalid header option found!!");
       }
@@ -29,7 +44,7 @@ fetch('/src/api/header_options.json')
 
       header.append(header_option);
     }
-  });
+  // });
 
   header.style.float = "right";
   document.getElementById("header").appendChild(header);

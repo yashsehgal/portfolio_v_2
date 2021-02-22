@@ -35,3 +35,13 @@
 ::-webkit-scrollbar-thumb {
   background-color: black;
 }
+
+.skill_name {
+  color: white;
+  background-color: black;
+  transition: 0.2s ease-in-out;
+}
+
+.skill_name:hover {
+  color: teal;
+}
