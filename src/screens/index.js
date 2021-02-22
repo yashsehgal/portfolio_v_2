@@ -21,17 +21,17 @@
 let res = [
   {
     "response": "pluto('Yash Sehgal').about();",
-    "title": "About Me",
+    "title": "About Him",
     "tag": "about"
   },
   {
     "response": "pluto('Yash Sehgal').skills()",
-    "title": "Skills I have",
+    "title": "Skills He has",
     "tag": "skills"
   },
   {
     "response": "pluto('Yash Sehgal').education()",
-    "title": "My Education",
+    "title": "His Education",
     "tag": "education"
   },
   {
@@ -71,14 +71,60 @@ let _skills_res = [
 
 let _education_res = [
   {
-    "title": "Medicaps University",
-    "education_type": "Under-graduation Course in B.Tech CSE(AI as specialization)"
+    "title": "Bachelors of Technology, Computer Science (with specialization in AI)",
+    "education_desc": "Medicaps University, Indore, India",
+    "duration": "2020-2024"
+  },
+  {
+    "title": "High School Graduation",
+    "education_desc": "Guru Harkrishan Public School, Indore, India",
+    "duration": "2018-2020"
+  }
+]
+
+
+let _experience_res = [
+  {
+    "title": "UI/UX Design Intern",
+    "companyname": "Infonium",
+    "duration": "current",
+    "category": "employment"
+  },
+  {
+    "title": "Graphic Designing - Executive",
+    "companyname": "CodeChef Medicaps Chapter (CMC)",
+    "duration": "current",
+    "category": "employment"
+  },
+  {
+    "title": "Core Member",
+    "companyname": "ACM Medicaps Chapter (MUACM)",
+    "duration": "current",
+    "category": "employment"
+  },
+  {
+    "title": "Open Source Developer",
+    "companyname": "GirlScript Summer Of Code (GSSOC)",
+    "duration": "3 months",
+    "category": "participation"
+  },
+  {
+    "title": "Open Source Contributor",
+    "companyname": "DevScript Winter Of Code (DSWOC)",
+    "duration": "3 months",
+    "category": "participation"
+  },
+  {
+    "title": "Open Source Contributor",
+    "companyname": "Hacktoberfest, By DigitalOcean",
+    "duration": "1 month",
+    "category": "participation"
   }
 ]
 
 
 let homepage_container = document.createElement("div");
-homepage_container.className = "homepage_container";
+homepage_container.className = "homepage_container animate__fadeInUp animate__animated";
 
 
 
@@ -103,11 +149,11 @@ introduction_description.style.fontFamily = "Poppins";
 introduction_description.innerHTML = "He is a <u>Tech Savvy</u>. <u>Developer</u>. and a <u>Designer</u>";
 
 let profile_photo = document.createElement("img");
-profile_photo.className = "profile";
+profile_photo.className = "profile animate__fadeInUp animate__animated";
 profile_photo.src = "src/screens/profile.png";
 profile_photo.style.float = "right";
 profile_photo.style.width = "24%";
-profile_photo.style.marginTop = "8em"
+profile_photo.style.marginTop = "15em"
 profile_photo.style.boxShadow = "6px 6px black";
 profile_photo.style.outline = "solid";
 profile_photo.alt = "The profile photo path is not in the mood. You should check my social profiles to see me :)";
@@ -232,15 +278,40 @@ experience_section.className = "section";
         section_title.style.fontFamily = "Poppins";
         section_title.style.fontWeight = 600;
 
-        let description = document.createElement("p");
-        description.className = "description";
-        description.style.width = "52%";
-        description.style.fontFamily = "Poppins";
-        description.style.color = "black";
+        // let description = document.createElement("p");
+        // description.className = "description";
+        // description.style.width = "52%";
+        // description.style.fontFamily = "Poppins";
+        // description.style.color = "black";
 
+               
         education_section.append(pluto_response);
         education_section.append(section_title);
-        education_section.append(description);
+        for (let data in _education_res) {
+          if (_education_res[data].title != null && _education_res[data].duration != null && _education_res[data].education_desc != null) {
+            let educationtitle = document.createElement("h3");
+            educationtitle.className = "title";
+            educationtitle.style.fontFamily = "Poppins";
+            educationtitle.style.color = "black";
+            educationtitle.innerHTML = _education_res[data].title;
+
+            let educationdescription = document.createElement("span");
+            educationdescription.className = "description";
+            educationdescription.style.fontFamily = "Poppins";
+            educationdescription.style.color = "gray";
+            educationdescription.innerHTML = _education_res[data].education_desc;
+
+            let educationduration = document.createElement("span");
+            educationduration.className = "duration";
+            educationduration.style.fontFamily = "Poppins";
+            educationduration.style.color = "gray";
+            educationduration.innerHTML = ` (${_education_res[data].duration})`;
+            
+            education_section.append(educationtitle);
+            education_section.append(educationdescription);
+            education_section.append(educationduration);
+          }
+        }
 
       } else if (res[data].tag != null && res[data].tag === "experience" && res[data].response != null) {
 
@@ -255,19 +326,80 @@ experience_section.className = "section";
         section_title.style.fontFamily = "Poppins";
         section_title.style.fontWeight = 600;
 
-        let description = document.createElement("p");
-        description.className = "description";
-        description.style.width = "52%";
-        description.style.fontFamily = "Poppins";
-        description.style.color = "black";
+        // let description = document.createElement("p");
+        // description.className = "description";
+        // description.style.width = "52%";
+        // description.style.fontFamily = "Poppins";
+        // description.style.color = "black";
 
         experience_section.append(pluto_response);
         experience_section.append(section_title);
-        experience_section.append(description);
+
+        for (let data in _experience_res) {
+          let experiencetitle = document.createElement("h3");
+          experiencetitle.className = "title";
+          
+          let experiencedescription = document.createElement("span");
+          experiencedescription.className = "description";
+
+          let experienceduration = document.createElement("span");
+          experienceduration.className = "duration";
+
+
+          let participationlist = document.createElement("div");
+
+
+          if (_experience_res[data].category != null && _experience_res[data].category === "employment") {
+            experiencetitle.innerHTML = _experience_res[data].title;
+            experiencetitle.style.color = "black";
+            experiencetitle.style.fontFamily = "Poppins";
+
+            experiencedescription.innerHTML = `@${_experience_res[data].companyname}`;
+            experiencedescription.style.color = "gray";
+            experiencedescription.style.fontFamily = "Poppins";
+
+            if (_experience_res[data].duration != "current") {
+              experienceduration.innerHTML = _experience_res[data].duration;
+              experienceduration.style.color = "gray";
+              experienceduration.style.fontFamily = "Poppins";
+            } else {
+              experienceduration.innerHTML = ` <u>currently working</u>`;
+              experienceduration.style.color = "gray";
+              experienceduration.style.fontFamily = "Poppins";
+            }
+          } else if (_experience_res[data].category != null && _experience_res[data].category === "participation") {
+            // let participation_writer = document.createElement("a");
+            // participation_writer.innerHTML = _experience_res[data].companyname;
+            // participation_writer.style.color = "black";
+            // participation_writer.style.fontFamily = "Poppins";
+
+            // participationlist.append(participation_writer);
+          }
+
+          // experiencetitle.innerHTML = _experience_res[data].title;
+
+
+
+          experience_section.append(experiencetitle);
+          experience_section.append(experiencedescription); experience_section.append(experienceduration);
+          // experience_section.append(`<h4>Participated in Events like: </h4>`);
+          // experience_section.append(participationlist);
+
+        }
+
       } else {
-        console.warn("something went wrong with index.js module. Sections method is not working properly!")
+        console.warn("something went wrong with <index.js> module. Sections method is not working properly!");
       }
     }
+
+
+    /// adding bg colors to sections
+    // education_section.style.backgroundColor = "#eee";
+    // education_section.style.padding = "4em";
+
+    // experience_section.style.backgroundColor = "#eee";
+    // experience_section.style.padding = "4em";
+
 
     /// appending all the sections into the homepage-container
     homepage_container.append(about_section);
