@@ -50,4 +50,19 @@
 .skill_name:hover {
   color: teal;
 }
+
+@media (max-width: 600px) {
+  body {
+    text-align: center;
+    max-width: 50%;
+  }
+  .header {
+    float: none;
+    text-align: center;
+  }
+  .headline .description {
+    float: none;
+    text-align: center;
+  }
+}
 /*# sourceMappingURL=index.css.map */

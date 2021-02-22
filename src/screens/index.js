@@ -160,9 +160,9 @@ profile_photo.alt = "The profile photo path is not in the mood. You should check
 
 
 /// appending introductory data into introduction_section
-introduction_section.append(introduction_headline);
-introduction_section.append(introduction_description);
 introduction_section.append(profile_photo);
+homepage_container.append(introduction_headline);
+homepage_container.append(introduction_description);
 
 
 /// appending data into homepage container

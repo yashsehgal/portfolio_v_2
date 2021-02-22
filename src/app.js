@@ -2,7 +2,7 @@
 // import "./screens/index.js";
 
 
-document.body.style.backgroundColor = "white";
+// document.body.style.backgroundColor = "white";
 document.body.style.maxWidth = "1350px";
 document.body.style.margin = "auto";
 document.body.style.marginTop = "6em";
