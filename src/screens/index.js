@@ -154,7 +154,7 @@ profile_photo.src = "src/screens/profile.png";
 profile_photo.style.float = "right";
 profile_photo.style.width = "24%";
 profile_photo.style.marginTop = "15em"
-profile_photo.style.boxShadow = "6px 6px black";
+profile_photo.style.boxShadow = "12px 12px black";
 profile_photo.style.outline = "solid";
 profile_photo.alt = "The profile photo path is not in the mood. You should check my social profiles to see me :)";
 
@@ -264,130 +264,132 @@ experience_section.className = "section";
         skills_section.append(section_title);
         skills_section.append(skills_list);
         // skills_section.append(description);
+      }
 
-      } else if (res[data].tag != null && res[data].tag === "education" && res[data].response != null) {
+      // } else if (res[data].tag != null && res[data].tag === "education" && res[data].response != null) {
 
-        /// code for "education" section
-        let pluto_response = document.createElement("p");
-        pluto_response.className = "pluto_response";
-        pluto_response.innerHTML = `> ${res[data].response}`;
+      //   /// code for "education" section
+      //   let pluto_response = document.createElement("p");
+      //   pluto_response.className = "pluto_response";
+      //   pluto_response.innerHTML = `> ${res[data].response}`;
 
-        let section_title = document.createElement("h1");
-        section_title.className = "section_title";
-        section_title.innerHTML = res[data].title;
-        section_title.style.fontFamily = "Poppins";
-        section_title.style.fontWeight = 600;
+      //   let section_title = document.createElement("h1");
+      //   section_title.className = "section_title";
+      //   section_title.innerHTML = res[data].title;
+      //   section_title.style.fontFamily = "Poppins";
+      //   section_title.style.fontWeight = 600;
 
-        // let description = document.createElement("p");
-        // description.className = "description";
-        // description.style.width = "52%";
-        // description.style.fontFamily = "Poppins";
-        // description.style.color = "black";
+      //   // let description = document.createElement("p");
+      //   // description.className = "description";
+      //   // description.style.width = "52%";
+      //   // description.style.fontFamily = "Poppins";
+      //   // description.style.color = "black";
 
                
-        education_section.append(pluto_response);
-        education_section.append(section_title);
-        for (let data in _education_res) {
-          if (_education_res[data].title != null && _education_res[data].duration != null && _education_res[data].education_desc != null) {
-            let educationtitle = document.createElement("h3");
-            educationtitle.className = "title";
-            educationtitle.style.fontFamily = "Poppins";
-            educationtitle.style.color = "black";
-            educationtitle.innerHTML = _education_res[data].title;
+      //   education_section.append(pluto_response);
+      //   education_section.append(section_title);
+      //   for (let data in _education_res) {
+      //     if (_education_res[data].title != null && _education_res[data].duration != null && _education_res[data].education_desc != null) {
+      //       let educationtitle = document.createElement("h3");
+      //       educationtitle.className = "title";
+      //       educationtitle.style.fontFamily = "Poppins";
+      //       educationtitle.style.color = "black";
+      //       educationtitle.innerHTML = _education_res[data].title;
 
-            let educationdescription = document.createElement("span");
-            educationdescription.className = "description";
-            educationdescription.style.fontFamily = "Poppins";
-            educationdescription.style.color = "gray";
-            educationdescription.innerHTML = _education_res[data].education_desc;
+      //       let educationdescription = document.createElement("span");
+      //       educationdescription.className = "description";
+      //       educationdescription.style.fontFamily = "Poppins";
+      //       educationdescription.style.color = "gray";
+      //       educationdescription.innerHTML = _education_res[data].education_desc;
 
-            let educationduration = document.createElement("span");
-            educationduration.className = "duration";
-            educationduration.style.fontFamily = "Poppins";
-            educationduration.style.color = "gray";
-            educationduration.innerHTML = ` (${_education_res[data].duration})`;
+      //       let educationduration = document.createElement("span");
+      //       educationduration.className = "duration";
+      //       educationduration.style.fontFamily = "Poppins";
+      //       educationduration.style.color = "gray";
+      //       educationduration.innerHTML = ` (${_education_res[data].duration})`;
             
-            education_section.append(educationtitle);
-            education_section.append(educationdescription);
-            education_section.append(educationduration);
-          }
-        }
+      //       education_section.append(educationtitle);
+      //       education_section.append(educationdescription);
+      //       education_section.append(educationduration);
+      //     }
+      //   }
 
-      } else if (res[data].tag != null && res[data].tag === "experience" && res[data].response != null) {
+      // } else if (res[data].tag != null && res[data].tag === "experience" && res[data].response != null) {
 
-        /// code for "experience" section
-        let pluto_response = document.createElement("p");
-        pluto_response.className = "pluto_response";
-        pluto_response.innerHTML = `> ${res[data].response}`;
+      //   /// code for "experience" section
+      //   let pluto_response = document.createElement("p");
+      //   pluto_response.className = "pluto_response";
+      //   pluto_response.innerHTML = `> ${res[data].response}`;
 
-        let section_title = document.createElement("h1");
-        section_title.className = "section_title";
-        section_title.innerHTML = res[data].title;
-        section_title.style.fontFamily = "Poppins";
-        section_title.style.fontWeight = 600;
+      //   let section_title = document.createElement("h1");
+      //   section_title.className = "section_title";
+      //   section_title.innerHTML = res[data].title;
+      //   section_title.style.fontFamily = "Poppins";
+      //   section_title.style.fontWeight = 600;
 
-        // let description = document.createElement("p");
-        // description.className = "description";
-        // description.style.width = "52%";
-        // description.style.fontFamily = "Poppins";
-        // description.style.color = "black";
+      //   // let description = document.createElement("p");
+      //   // description.className = "description";
+      //   // description.style.width = "52%";
+      //   // description.style.fontFamily = "Poppins";
+      //   // description.style.color = "black";
 
-        experience_section.append(pluto_response);
-        experience_section.append(section_title);
+      //   experience_section.append(pluto_response);
+      //   experience_section.append(section_title);
 
-        for (let data in _experience_res) {
-          let experiencetitle = document.createElement("h3");
-          experiencetitle.className = "title";
+      //   for (let data in _experience_res) {
+      //     let experiencetitle = document.createElement("h3");
+      //     experiencetitle.className = "title";
           
-          let experiencedescription = document.createElement("span");
-          experiencedescription.className = "description";
+      //     let experiencedescription = document.createElement("span");
+      //     experiencedescription.className = "description";
 
-          let experienceduration = document.createElement("span");
-          experienceduration.className = "duration";
-
-
-          let participationlist = document.createElement("div");
+      //     let experienceduration = document.createElement("span");
+      //     experienceduration.className = "duration";
 
 
-          if (_experience_res[data].category != null && _experience_res[data].category === "employment") {
-            experiencetitle.innerHTML = _experience_res[data].title;
-            experiencetitle.style.color = "black";
-            experiencetitle.style.fontFamily = "Poppins";
-
-            experiencedescription.innerHTML = `@${_experience_res[data].companyname}`;
-            experiencedescription.style.color = "gray";
-            experiencedescription.style.fontFamily = "Poppins";
-
-            if (_experience_res[data].duration != "current") {
-              experienceduration.innerHTML = _experience_res[data].duration;
-              experienceduration.style.color = "gray";
-              experienceduration.style.fontFamily = "Poppins";
-            } else {
-              experienceduration.innerHTML = ` <u>currently working</u>`;
-              experienceduration.style.color = "gray";
-              experienceduration.style.fontFamily = "Poppins";
-            }
-          } else if (_experience_res[data].category != null && _experience_res[data].category === "participation") {
-            // let participation_writer = document.createElement("a");
-            // participation_writer.innerHTML = _experience_res[data].companyname;
-            // participation_writer.style.color = "black";
-            // participation_writer.style.fontFamily = "Poppins";
-
-            // participationlist.append(participation_writer);
-          }
-
-          // experiencetitle.innerHTML = _experience_res[data].title;
+      //     let participationlist = document.createElement("div");
 
 
+      //     if (_experience_res[data].category != null && _experience_res[data].category === "employment") {
+      //       experiencetitle.innerHTML = _experience_res[data].title;
+      //       experiencetitle.style.color = "black";
+      //       experiencetitle.style.fontFamily = "Poppins";
 
-          experience_section.append(experiencetitle);
-          experience_section.append(experiencedescription); experience_section.append(experienceduration);
-          // experience_section.append(`<h4>Participated in Events like: </h4>`);
-          // experience_section.append(participationlist);
+      //       experiencedescription.innerHTML = `@${_experience_res[data].companyname}`;
+      //       experiencedescription.style.color = "gray";
+      //       experiencedescription.style.fontFamily = "Poppins";
 
-        }
+      //       if (_experience_res[data].duration != "current") {
+      //         experienceduration.innerHTML = _experience_res[data].duration;
+      //         experienceduration.style.color = "gray";
+      //         experienceduration.style.fontFamily = "Poppins";
+      //       } else {
+      //         experienceduration.innerHTML = ` <u>currently working</u>`;
+      //         experienceduration.style.color = "gray";
+      //         experienceduration.style.fontFamily = "Poppins";
+      //       }
+      //     } else if (_experience_res[data].category != null && _experience_res[data].category === "participation") {
+      //       // let participation_writer = document.createElement("a");
+      //       // participation_writer.innerHTML = _experience_res[data].companyname;
+      //       // participation_writer.style.color = "black";
+      //       // participation_writer.style.fontFamily = "Poppins";
 
-      } else {
+      //       // participationlist.append(participation_writer);
+      //     }
+
+      //     // experiencetitle.innerHTML = _experience_res[data].title;
+
+
+
+      //     experience_section.append(experiencetitle);
+      //     experience_section.append(experiencedescription); experience_section.append(experienceduration);
+      //     // experience_section.append(`<h4>Participated in Events like: </h4>`);
+      //     // experience_section.append(participationlist);
+
+      //   }
+
+      // } 
+      else {
         console.warn("something went wrong with <index.js> module. Sections method is not working properly!");
       }
     }

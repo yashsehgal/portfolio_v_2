@@ -7,11 +7,11 @@ header.className = "header";
 let _res = [
   {
     "option": "Home",
-    "url": "/index.htm"
+    "url": "  index.htm"
   },
   {
     "option": "Contact",
-    "url": "/contact.htm"
+    "url": "contact.htm"
   },
   {
     "option": "v.2.0",
