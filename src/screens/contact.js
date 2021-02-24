@@ -67,6 +67,10 @@ contact_page_container.append(contact_form);
 document.getElementById("content").appendChild(contact_page_container);
 
 
+let fullname = document.getElementById("full_name-input").value;
+console.log(fullname)
+
+
 /// contact form event methods
 
 // class ContactFormActivity {

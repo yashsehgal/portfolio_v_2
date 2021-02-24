@@ -139,7 +139,7 @@ introduction_headline.style.fontFamily = "Poppins";
 introduction_headline.style.width = "40%";
 introduction_headline.style.fontSize = "32px";
 // introduction_headline.style.float = "left";
-introduction_headline.innerHTML = `Hey you Beautiful, I am <a href="https://www.github.com/yashsehgal/pluto" target="_blank" class="pluto">Pluto!</a> A Creation of <a href="/index.htm" style="color: black">Yash Sehgal</a>`;
+introduction_headline.innerHTML = `Hey you Beautiful, I am <a href="https://www.github.com/yashsehgal/pluto" target="_blank" class="pluto">Pluto!</a> A Creation of <a href="index.htm" style="color: black">Yash Sehgal</a>`;
 
 
 let introduction_description = document.createElement("p");
