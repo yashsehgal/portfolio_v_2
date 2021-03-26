@@ -47,6 +47,11 @@ let homepage = document.createElement("div");
 homepage.className = "container";
 homepage.id = "homepage";
 
+let profile = document.createElement("img");
+profile.src = "profilePhotoRed.jpg";
+profile.className = "profile";
+
+homepage.append(profile);
 
 let LandingSection = document.createElement("div");
 LandingSection.id = "landing-section";

@@ -19,7 +19,9 @@ body {
 .header {
   background-color: white;
   overflow: hidden;
+  width: 100%;
   padding: 2em;
+  position: fixed;
   box-shadow: 4px 8px 12px rgb(231, 231, 231);
 }
 
@@ -39,15 +41,20 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   text-decoration: none;
-  margin-right: 2em;
   float: right;
+  margin-right: 4em;
 }
 
 .header_option:hover {
   color: blue;
 }
 
-
+.profile {
+  width: 14%;
+  margin-top: 8em;
+  border-radius: 100%;
+  border: black solid;
+}
 
 .headline {
   color: black;
@@ -72,7 +79,7 @@ body {
 }
 
 .taglineSection {
-  margin-top: 8em;
+  margin-top: 4em;
 }
 
 .section {
@@ -184,8 +191,12 @@ body {
 }
 
 
+
 /// MEDIA QUERY - RESPONSIVE CSS FOR MOBILE VIEW
 @media screen and (max-width: 1000px) {
+  body {
+    margin: 0;
+  }
   #homepage {
     margin: auto;
     max-width: 800px;
