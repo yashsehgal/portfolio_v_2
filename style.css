@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+body {
+  margin: 0;
+}
+
+body ::-moz-selection {
+  color: black;
+  background-color: rgba(0, 0, 255, 0.26);
+}
+
+body ::selection {
+  color: black;
+  background-color: rgba(0, 0, 255, 0.26);
+}
+
+#homepage {
+  margin: auto;
+  max-width: 1400px;
+}
+
+.header {
+  background-color: white;
+  overflow: hidden;
+  padding: 2em;
+  -webkit-box-shadow: 4px 8px 12px #e7e7e7;
+          box-shadow: 4px 8px 12px #e7e7e7;
+}
+
+.logo {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.logo:hover {
+  color: gray;
+}
+
+.header_option {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  margin-right: 2em;
+  float: right;
+}
+
+.header_option:hover {
+  color: blue;
+}
+
+.headline {
+  color: black;
+  font-weight: 500;
+  font-family: "Poppins", monospace;
+}
+
+.description {
+  color: gray;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+}
+
+.link {
+  color: blue;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: black;
+}
+
+.taglineSection {
+  margin-top: 8em;
+}
+
+.section {
+  width: 50%;
+  margin-top: 8em;
+}
+
+#about-me-section {
+  color: black;
+  font-family: "Work Sans", sans-serif;
+}
+
+#experience-section {
+  color: black;
+  font-family: "Work Sans", sans-serif;
+}
+
+#education-section {
+  color: black;
+  font-family: "Work Sans", sans-serif;
+}
+
+.skills-layer {
+  display: table-cell;
+}
+
+.fab {
+  color: gray;
+  font-size: 32px;
+}
+
+.fab:hover {
+  color: black;
+}
+
+.fas {
+  color: gray;
+  font-size: 30px;
+}
+
+.fas:hover {
+  color: black;
+}
+
+#skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+  margin: auto;
+  cursor: default;
+  border-radius: 4px;
+  width: 600px;
+}
+
+#skill:hover {
+  background-color: #e0e0e0;
+}
+
+.skill_name {
+  color: black;
+  font-family: "Work Sans", sans-serif;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 1em;
+}
+
+.project-card {
+  background-color: white;
+  overflow: hidden;
+  border-radius: 4px;
+  padding: 1em;
+}
+
+.title, .tools, .project_link {
+  font-family: "Work Sans", sans-serif;
+}
+
+.tools {
+  font-size: small;
+  font-weight: bold;
+  color: #8f8f8f;
+}
+
+#project-section {
+  color: black;
+  font-family: "Work Sans", sans-serif;
+}
+
+.blogs-layer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.video {
+  margin-right: 1em;
+}
+
+.blogs-container {
+  margin: auto;
+}
+
+.footer {
+  margin-top: 6em;
+}
+
+.footer-icons {
+  margin-right: 1em;
+}
+
+@media screen and (max-width: 1000px) {
+  .logo {
+    text-align: center;
+    margin: auto;
+  }
+  .header_option {
+    display: none;
+  }
+  .headline {
+    text-align: center;
+  }
+  .description {
+    text-align: center;
+  }
+  .section {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  #about-me-section, #experience-section, #education-section {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .skills-layer {
+    display: block;
+  }
+  #skill {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .blogs-layer {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .footer-icons {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
