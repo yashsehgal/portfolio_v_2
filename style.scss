@@ -1,6 +1,7 @@
 
 /// importing google fonts
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body {
   margin: 0;
@@ -185,6 +186,10 @@ body {
 
 /// MEDIA QUERY - RESPONSIVE CSS FOR MOBILE VIEW
 @media screen and (max-width: 1000px) {
+  #homepage {
+    margin: auto;
+    max-width: 800px;
+  }
   .logo {
     text-align: center;
     margin: auto;
