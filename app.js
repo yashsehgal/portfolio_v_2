@@ -61,11 +61,24 @@ TaglineSection.className = "taglineSection";
 
 let LandingPageTitle = document.createElement("h2");
 LandingPageTitle.className = "headline";
-LandingPageTitle.innerHTML = "Hey There, I hope you are doing well.";
+LandingPageTitle.innerHTML = `
+Hey There, I hope you are doing well.`;
 
 let LandingPageDescription = document.createElement("p");
 LandingPageDescription.className = "description";
-LandingPageDescription.innerHTML = `I am <a href="index.htm" class="link">Yash Sehgal</a>, I am a Developer, A Designer and A Former Computer Science Student.`;
+LandingPageDescription.innerHTML = `
+I am <a href="index.htm" class="link">Yash Sehgal</a>, I am a Developer, A Designer and A Former Computer Science Student.
+<br/>
+<div id="social-icons">
+<a href="https://www.linkedin.com/in/yash-sehgal-55b7711a4/" target="_blank" class="footer-icons"><i class="fab fa-linkedin"></i></a>
+<a href="https://github.com/yashsehgal" target="_blank" class="footer-icons"><i class="fab fa-github"></i></a>
+<a href="https://www.instagram.com/sehgalyash_/" target="_blank" class="footer-icons"><i class="fab fa-instagram"></i></a>
+<a href="https://twitter.com/YashSeh90869786" target="_blank" class="footer-icons"><i class="fab fa-twitter"></i></a>
+<a href="https://www.behance.net/yashsehgaleee3" target="_blank" class="footer-icons"><i class="fab fa-behance"></i></a>
+<a href="https://medium.com/@yashsehgal.study" target="_blank" class="footer-icons"><i class="fab fa-medium"></i></a>
+<a href="https://dev.to/yashsehgal" target="_blank" class="footer-icons"><i class="fab fa-dev"></i></a>
+</div>
+`;
 
 TaglineSection.append(LandingPageTitle, LandingPageDescription);
 

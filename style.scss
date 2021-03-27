@@ -190,7 +190,81 @@ body {
   margin-right: 1em;
 }
 
+#social-icons {
+  margin-top: 2.4em;
+}
 
+.fa-python:hover {
+  color: rgb(82, 82, 255);
+}
+
+.fa-css3-alt:hover {
+  color: rgb(82, 82, 255);
+}
+
+.fa-js-square:hover {
+  color: rgb(219, 223, 0);
+}
+
+.fa-sass:hover {
+  color: rgb(226, 0, 94);
+}
+
+.fa-html5:hover {
+  color: orangered;
+}
+
+.fa-git-alt:hover {
+  color: rgb(177, 41, 0);
+}
+
+.fa-npm:hover {
+  color: red;
+}
+
+.fa-figma:hover {
+  color: rgb(112, 2, 155);
+}
+
+.fa-invision:hover {
+  color: rgb(224, 0, 56);
+}
+
+.fa-project-diagram:hover {
+  color: black;
+}
+
+.fa-database:hover {
+  color: orange;
+}
+
+.fa-linkedin:hover {
+  color: rgb(82, 82, 255);
+}
+
+.fa-github:hover {
+  color: black;
+}
+
+.fa-instagram:hover {
+  color: rgb(207, 0, 162);
+}
+
+.fa-twitter:hover {
+  color: rgb(82, 82, 255);
+}
+
+.fa-behance:hover {
+  color: blue;
+}
+
+.fa-medium:hover {
+  color: black;
+}
+
+.fa-dev:hover {
+  color: black;
+}
 
 /// MEDIA QUERY - RESPONSIVE CSS FOR MOBILE VIEW
 @media screen and (max-width: 1000px) {

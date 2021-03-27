@@ -197,6 +197,82 @@ body ::selection {
   margin-right: 1em;
 }
 
+#social-icons {
+  margin-top: 2.4em;
+}
+
+.fa-python:hover {
+  color: #5252ff;
+}
+
+.fa-css3-alt:hover {
+  color: #5252ff;
+}
+
+.fa-js-square:hover {
+  color: #dbdf00;
+}
+
+.fa-sass:hover {
+  color: #e2005e;
+}
+
+.fa-html5:hover {
+  color: orangered;
+}
+
+.fa-git-alt:hover {
+  color: #b12900;
+}
+
+.fa-npm:hover {
+  color: red;
+}
+
+.fa-figma:hover {
+  color: #70029b;
+}
+
+.fa-invision:hover {
+  color: #e00038;
+}
+
+.fa-project-diagram:hover {
+  color: black;
+}
+
+.fa-database:hover {
+  color: orange;
+}
+
+.fa-linkedin:hover {
+  color: #5252ff;
+}
+
+.fa-github:hover {
+  color: black;
+}
+
+.fa-instagram:hover {
+  color: #cf00a2;
+}
+
+.fa-twitter:hover {
+  color: #5252ff;
+}
+
+.fa-behance:hover {
+  color: blue;
+}
+
+.fa-medium:hover {
+  color: black;
+}
+
+.fa-dev:hover {
+  color: black;
+}
+
 @media screen and (max-width: 1000px) {
   body {
     margin: 0;
