@@ -87,6 +87,9 @@ LandingSection.append(TaglineSection);
 /// appending landing-section in the homepage
 homepage.append(LandingSection);
 
+let mobileViewProfile = document.createElement("img");
+mobileViewProfile.className = "mobile-view-profile";
+mobileViewProfile.src = "profilePhotoRed.jpg";
 
 /// About Me Section - Content
 let AboutMeSection = document.createElement("div");
@@ -102,7 +105,7 @@ AboutMeSection.innerHTML = `
 <li>Also, When I am lazy/not working, I love to spend time on FL Studio and make music. Also, I have some decent sketching skills. </li>
 </ul>
 `;
-
+homepage.append(mobileViewProfile);
 homepage.append(AboutMeSection);
 
 /// My Experience Section - Content
