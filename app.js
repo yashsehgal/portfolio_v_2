@@ -209,7 +209,7 @@ ProjectSection.innerHTML = `
 <ul>
 <li><a href="https://www.github.com/DesignSystemsOSS/eccentrictouch/" class="link" target="_blank">Eccentric Touch</a> is a CSS Library which has various UI Components and Stylesheet Methods which can be used by other developers. This can be used to reduce the amount of work load that we usually spend in writing CSS. This Project is under the initiative of <a href="https://www.github.com/DesignSystemsOSS/" class="link" target="_blank">@The DesignSystems</a>.</li>
 <li><a href="" class="link" target="_blank">Events.find</a> is a short Javascript Project which has a feature to look for Upcoming Technology related events and bootcamps. I have used Technologies like Javascript, CSS/SCSS, HTML, JSON, Git.</li>
-<li>I have also designed a simple Discord Bot called <a href="https://yashsehgal.github.io/designsystem-bot-website/" class="link" target=""_blank">The DesignSystems-Bot</a>, This bot program has features like saving portfolio URLs, GitHub Profiles, receiving motivational quotes and much more. I have used Python to implement the entire backend scripts and logics, whereas, DJango to host the bot on the line.</li>
+<li>I have also designed a simple Discord Bot called <a href="https://yashsehgal.github.io/designsystem-bot-website/" class="link" target=""_blank">The DesignSystems-Bot</a>, This bot program has features like saving portfolio URLs, GitHub Profiles, receiving motivational quotes and much more. I have used Python to implement the entire backend scripts and logics, whereas, Flask to host the bot on the line.</li>
 </ul>
 `;
 
